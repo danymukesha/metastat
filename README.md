@@ -6,25 +6,27 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of metastat is to perform metabolomics data analysis.
+The goal of `metastat` is to perform metabolomics data analysis.
 
 ## Objective
 
-To improve understanding and facilitate interpretation, metastat
-presents results through clear and informative data visualizations. It
-allows easy integration and collaboration with other research teams by
-exporting statistical tables to Excel spreadsheets. The tool ensures the
-reliability and accuracy of data through a process of data cleaning and
-quality assessment. It uses principal component analysis visualization
-to gain insights and make informed decisions. It also provides the
-ability to use univariate two-class statistics or multivariate analysis
-using partial least squares discriminant analysis. The tool optimizes
-the model and ensures the robustness of the results through permutation
-testing and model prediction metrics.
+`metastat` presents results through clear and informative data
+visualizations, to improve the understanding and facilitate the
+interpretation of the results. It allows easy integration and
+collaboration with other research teams by exporting statistical tables
+to Excel spreadsheets. The tool ensures the reliability and accuracy of
+data through a process of data cleaning and quality assessment. It uses
+principal component analysis visualization to gain insights and make
+informed decisions. It also provides the ability to use uni-variate
+two-class statistics or multivariate analysis using partial least
+squares discriminant analysis. Furthermore, the tool optimizes the model
+and ensures the robustness of the results through permutation testing
+and model prediction metrics.
 
 ## Installation
 
-You can install the development version of metastat like so:
+If you want to use the development version of `metastat`, run the
+following command:
 
 ``` r
 devtools::install_github("danymukesha/metastat")
@@ -36,5 +38,10 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(metastat)
+#> 
+#> Attaching package: 'metastat'
+#> The following object is masked from 'package:base':
+#> 
+#>     scale
 ## basic example code
 ```
