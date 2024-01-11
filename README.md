@@ -38,5 +38,10 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(metastat)
+#> 
+#> Attaching package: 'metastat'
+#> The following object is masked from 'package:base':
+#> 
+#>     scale
 ## basic example code
 ```

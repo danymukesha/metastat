@@ -2,6 +2,8 @@
 #'
 #' Creates a table of univariate statistics for a two-class analysis.
 #'
+#' @name univariate_2class
+#'
 #' @param DataTable Data frame containing the required columns.
 #' @param PeakTable Data frame containing peak information.
 #' @param group Name of the column in DataTable that contains the class data.
