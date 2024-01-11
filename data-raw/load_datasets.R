@@ -1,5 +1,7 @@
 
 library(readr)
+library(dplyr)
+library(tibble)
 
 qc_dataset <- read_csv("data-raw/quality_control.csv") %>% as_tibble
 raw_dataset <- read_csv("data-raw/complete_dataset_kept_duplicates.csv") %>% as_tibble
