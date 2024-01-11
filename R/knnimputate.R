@@ -23,6 +23,7 @@ knnimpute <- function(x, k = 3) {
   # Tranpose x so we treat columns as features, and rows as samples
   x <- t(x)
 
+  k <- as.integer(k)
   # Error check for k value
   if (!is.integer(k)) {
     stop("k is not an integer")

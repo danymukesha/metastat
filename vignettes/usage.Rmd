@@ -4,6 +4,8 @@ output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{usage}
   %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{vigex}
+  %\VignetteEngine{mdVignettes::md}
   %\VignetteEncoding{UTF-8}
 ---
 
@@ -17,3 +19,32 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(metastat)
 ```
+
+
+```{r}
+# Use the dataset of example
+metastat::deduplicated_dataset
+```
+
+
+
+```{r}
+# Load or generate the dataset
+data <- deduplicated_dataset[, 8:ncol(deduplicated_dataset)]
+
+# Log scale transformation (base-10)
+Xlog <- log10(data)
+
+# # Scale the data using different methods (auto, pareto, vast, level)
+# Xscale <- metastat::scale(Xlog, method = 'auto')
+# 
+# # Perform kNN imputation (k=3) for missing values
+# Xknn <- metastat::knnimpute(Xlog, k = 3)
+# 
+# # Print the dimensions of the imputed data
+# cat("Xknn:", nrow(Xknn), "rows &", ncol(Xknn), "columns\n")
+# 
+# # Perform PCA analysis
+# metastat::pca_plot(Xknn, pcx = 1, pcy = 2, group_label = dataTable$SampleType)
+```
+
